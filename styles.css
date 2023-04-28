@@ -39,3 +39,8 @@ footer{
 .texto-footer{
     text-align: center;
 }
+.tragos {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
