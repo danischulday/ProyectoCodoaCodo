@@ -11,7 +11,7 @@
 <body>
     <header>
     
-        <img id="logo-Gina" src="images/logo.png" alt="logo de Gina Cocteles" ; width="300">
+        <img id="logo-Gina" src="images/logo.png" alt="logo de Gina Cocteles" ; width="150">
     </header>
     <nav class="nav">
         <ul>
@@ -21,6 +21,44 @@
             <li><a href="/contacto.html">Encontranos</a></li>
         </ul>
     </nav>
-    
+    <section>
+        <header>
+            <h2>contactanos</h2>
+        </header>
+        <form action="" method="get">
+            <fieldset>
+            <p><label for="name"> nombre y apellido
+                <input type="text" name="nombre y apellido" id="name" required></label>
+            </p>
+            <p> tipo de evento:
+                <select name="evento" id="evento">
+                    <option>casamiento</option>
+                    <option>cumpleaños</option>
+                    <option>fiesta de oficina</option>
+                    <option>eventos privados</option>
+                    <option>otros</option>
+                </select>
+            </p>
+            <p>
+                <label for="cantidad de personas"> cantidad de personas
+                <input type="number" name="numero" id="cantidad de personas" required></label>
+            </p>
+            <p>
+                <label for="fecha"> fecha de evento
+                <input type="date" name="date" id="fecha" min="20023-05-01" required></label>
+            </p>
+            <p> consultas:</p>
+            <p>
+                <textarea name="consultas" id="consulta" cols="30" rows="10">ingrese su consulta</textarea>
+            </p>
+        </fieldset>
+            <p>
+                <label for="enviar"> 
+                <input type="submit" value="enviar"></label>
+            </p>
+
+        </form>
+        </section>
+
 </body>
 </html>

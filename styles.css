@@ -44,3 +44,10 @@ footer{
     align-items: center;
     justify-content: center
 }
+p{
+    margin: 30px;
+}
+fieldset{
+    margin: 20px;
+    text-align: center;
+}
