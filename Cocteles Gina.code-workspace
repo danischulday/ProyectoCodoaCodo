@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../MuebleriaBauhaus"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Cocteles Gina"
+	}
+}
