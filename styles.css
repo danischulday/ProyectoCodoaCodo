@@ -1,5 +1,7 @@
-body{
-    margin: 0; 
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
     
 header{
@@ -9,6 +11,8 @@ header{
 }
 .nav {
     margin: 30px 0;
+    padding:1em;
+    background-color: rgb(153, 153, 235) ;
 }
 .nav ul {
     display: flex;
@@ -35,6 +39,7 @@ header{
 footer{
     display: flex;
     justify-content: space-between;
+    background-color: rgb(245, 212, 200);
 }
 .texto-footer{
     text-align: center;
@@ -47,7 +52,58 @@ footer{
 p{
     margin: 30px;
 }
+/* contacto*/
 fieldset{
     margin: 20px;
     text-align: center;
 }
+/* body */
+section {
+    margin: auto;
+}
+h3 {
+    margin: 20px;
+}
+.grilla{
+    display:grid ;
+    grid-template-columns:repeat(12,1fr)
+    
+}
+.grilla .imagen {
+    box-shadow: 2px 2px 4px rgba(182, 182, 182, 1.5) ;
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+}
+
+.intro .grilla{
+    background-color: rgb(153, 153, 235);
+    margin: auto;
+    text-align: center;
+}
+
+.nosotros {
+    grid-column-end: span 4 ;
+    padding: 2em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.fotopomelo {
+    grid-column-end: span 8;
+}
+.imagen {
+    grid-column-end: span 3;
+
+}
+@media (max-width: 600px) {
+    .grilla > * {
+        grid-column-end: span 12;
+    }
+    .grilla {
+        gap: 2em 0;
+    }
+}
+
+
