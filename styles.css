@@ -14,7 +14,7 @@ nav{
     padding: 20px 50px;
 }
 .logo{
-    height: 150px;
+    height: 120px;
 }
 nav ul{
     float: right;
@@ -69,7 +69,7 @@ li a.active, li a:hover{
     ul{
         position: fixed;
         width: 50%;
-        height: 43vh;
+        height: 100%;
         background:rgb(232, 229, 223);
         border-radius: 5%;
         top: 2px;
@@ -195,7 +195,6 @@ footer{
 .rr-ss i{
     font-size: 30px;
     padding: 0 30px 30px 30px;
-    border-bottom: 1px solid #000;
 }
 footer a{
     text-decoration: none;
@@ -214,3 +213,7 @@ footer a:hover{
     margin: 10px;
 
 } 
+@media (max-width: 952px){
+
+  
+}
