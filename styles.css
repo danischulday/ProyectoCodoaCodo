@@ -155,6 +155,7 @@ li a.active, li a:hover{
     opacity: .8;
 }
 
+
 #card0 {
     background: url("images/beer.avif");
     background-size: cover;
@@ -172,8 +173,12 @@ li a.active, li a:hover{
     background-size: cover;
 }
 #card4 {
-    background: url("images/alexander-mils-pPhN8HFzkDE-unsplash.jpg");
+    background: url("images/jugoNaranja.jpg");
     background-size: cover;
+}
+#card5 {
+    background: url("images/gaseosa.avif");
+    background-size: cover; 
 }
 
 /*------FOOTER--------------*/
@@ -214,6 +219,10 @@ footer a:hover{
 
 } 
 @media (max-width: 952px){
-
-  
+    .icono{
+        position: fixed;
+    }
+    .enlaces{
+        font-size: 15px;
+    }
 }
