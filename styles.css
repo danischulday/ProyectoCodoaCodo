@@ -2,12 +2,12 @@ body{
     margin: 0; 
     font-family: Arial, Helvetica, sans-serif;
 }
-    
+/*     
 header{
     display: flex;
     text-align: center;
     justify-content: space-evenly;
-}
+} */
 /*-------NAV------------*/
 nav{
     background:  rgb(232, 229, 223);
@@ -19,7 +19,7 @@ nav{
     padding: 20px 50px;
 }
 .logo{
-    height: 150px;
+    height: 130px;
     /*centrar!*/
 }
 nav ul{
@@ -43,6 +43,7 @@ li a.active, li a:hover{
     background:#dbd9cb;
     transition: .5s;
 }
+
 .checkbtn{
     font-size: 30px;
     color: #fff;
@@ -54,6 +55,46 @@ li a.active, li a:hover{
 } 
 #check{
     display: none;
+}
+/*-----------RESPONSIVE-----------------------*/
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:#ded6a5;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: rgb(255, 255, 255);
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
 }
 /* .nav {
     margin: 30px 0;
@@ -138,15 +179,6 @@ main{
     background-color: #ded6a5;
 } */
 
-.galeria-imagenes{
-    display: flex;
-    flex-wrap: wrap;
-    justify-self: space-evenly;
-}
-    
-
-
-
 /* .grid-container{
     display: flex;
     grid-template-columns: repeat(200px,1fr);
@@ -157,8 +189,13 @@ main{
     padding: 50px;
     } */
 
-
-    .grid-item{
+.galeria-imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: space-evenly;
+}
+    
+.grid-item{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -173,12 +210,12 @@ main{
     transition: transform 0.5s;
     background-size: cover;
        
-    }
-    .grid-item:hover {
+}
+.grid-item:hover {
     box-shadow: 0px 10px 15px 5px rgba(182, 182, 182, 1.5);
     transform: translateY(-12px);
     opacity: .8;
-    }
+}
     
 /*------FOOTER--------------*/
 footer{
@@ -218,43 +255,3 @@ footer a:hover{
     margin: 10px;
 
 } 
-/*-----------RESPONSIVE-----------------------*/
-@media (max-width: 952px){
-    .enlace{
-        padding-left: 20px;
-    }
-    nav ul li a{
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 858px){
-    .checkbtn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background:#ded6a5;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    li a:hover, li a.active{
-        background: none;
-        color: rgb(255, 255, 255);
-    }
-    #check:checked ~ ul{
-        left:0;
-    }
-}
