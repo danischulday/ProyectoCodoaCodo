@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" href="/images/logo (8).ico" type="image/x-icon">
-    <title>Gina Cocteles</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/favicon_io/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b734776b03.js" crossorigin="anonymous"></script>
+        <title>Cocteles Gina</title>
+    </head>
+
+
 <body>
-    <header>
-    
-        <img id="logo-Gina" src="images/logo.png" alt="logo de Gina Cocteles" ; width="150px">
-    </header>
-    <nav class="nav">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="#" class="enlace">
+            <img src="images/logo.png" alt="logo gina" class="logo">
+        </a>
+        
         <ul>
             <li><a href="/index.html">Home</a></li>
             <li><a href="/productos.html"> productos</a></li>
@@ -22,26 +32,11 @@
             <li><a href="/contacto.html">Encontranos</a></li>
         </ul>
     </nav>
-    <section>
-        <div class="grilla">
-            <div class="imagen">
-                <img src="/images/al-elmes-ULHxWq8reao-unsplash.jpg"  alt="casamiento">
-                <h3> bodas</h3>
-            </div>
-            <div class="imagen">
-                <img src="/images/kats-weil-CLD1i8hp008-unsplash.jpg"  alt="evento empresarial">
-                <h3> eventos empresariales</h3>
-            </div>
-            <div class="imagen">
-                <img src="/images/priscilla-du-preez-W3SEyZODn8U-unsplash.jpg" alt="eventos privados">
-                <h3> eventos privados</h3>
-            </div>
-        </div>
-
-    </section>
     
+
+
     <section class="intro">
-        <div class="grilla">
+        <div class="container">
             <div class="nosotros">
                 <h3>NOSOTROS</h3>
                 <p> Somos una empresa dedicada a ofrecer cocteleria de autor.</p>
@@ -49,17 +44,52 @@
                 <p> Contactanos para que tu evento sea unico.</p>
             </div>
             <img class="fotopomelo" src="images/mary-potoplyak-zhW1-frW6bY-unsplash.jpg" alt="Rodajas de pomelo"
-                width="100%" />
+                width="100%">
         </div>
     </section>
+    <section class="nuestrosclientes">
+        <h2 class="clientes">NUESTROS CLIENTES</h2>
+        <div class="eventosimagenes">
+            <div class="imagen">
+                <img src="/images/al-elmes-ULHxWq8reao-unsplash.jpg" width="300"  alt="casamiento" >
+                <h3> "fue una boda increible, la cocteleria simplemente espectacular!... 
+                <br> 10/2022"</h3>
+
+            </div>
+            <div class="imagen">
+                <img src="/images/kats-weil-CLD1i8hp008-unsplash.jpg" width="300" alt="evento empresarial" >
+                <h3>" Hace 10 años que la elegimos. Es una empresa de confianza y excelente servicio.... 
+                <br>  03/2023" </h3>
+            </div>
+            <div class="imagen">
+                <img src="/images/priscilla-du-preez-W3SEyZODn8U-unsplash.jpg" width="300" alt="eventos privados" >
+                <h3> "Muy buen servicio, utilizan productos de calidad. Impecable!
+                    <br>  04/2023"
+                </h3>
+            </div>
+            <div class="imagen">
+                <img src="/images/austin-distel-60caCHdOqH0-unsplash.jpg" width="300" alt="cumpleaños">
+                <h3> "Nos encanto el servicio, la presentacion y la elaboracion. Super recomendable.. 
+                    <br>  07/2022" </h3>
+            </div>
+        </div>
+
+    </section>
     
-    <br>
-    
+    <br><br>
     <footer>
-        <i class='bx bxl-whatsapp' undefined></i>
-        <i class='bx bxl-instagram'></i>
-        <i class='bx bxl-facebook-square'></i> <br>
-        <p class="texto-footer">PROYECTO CODO A CODO</p>
+        <div class="rr-ss" >
+           <a href="icono"><i class="fa-brands fa-instagram"></i></a>
+           <a href="icono"><i class="fa-brands fa-twitter"></i></a>
+           <a href="icono"><i class="fa-brands fa-facebook"></i></a>
+           <a href="icono"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <div class="enlaces">
+           <p><a href="">Política de privacidad&nbsp;</a></p>
+           <p>|&nbsp;</p>
+           <p><a href="">Aspectos legales</a></p>
+        </div>
+        <p>Proyecto Codo a Codo © 2023. </p>
     </footer>
     </body>
     
