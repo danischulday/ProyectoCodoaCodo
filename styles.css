@@ -49,7 +49,7 @@ li a.active, li a:hover{
 #check{
     display: none;
 }
-@media (max-width: 952px){
+@media (max-width: 1200px){
     nav {
         position: fixed;
     }
@@ -66,13 +66,11 @@ li a.active, li a:hover{
     .checkbtn{
         display: block;
     }
-    ul{
+    nav ul{
         position: fixed;
         width: 50%;
         height: 100%;
-        background:rgb(232, 229, 223);
-        border-radius: 5%;
-        top: 2px;
+        background: rgb(232, 229, 223);;
         left: -100%;
         text-align: center;
         transition: all .5s;
@@ -85,9 +83,9 @@ li a.active, li a:hover{
     nav ul li a{
         font-size: 20px;
     }
-    li a:hover, li a.active{
+     nav li a:hover, li a.active{
         background: none;
-        color: rgb(255, 255, 255);
+        color: #ded6a5;
     }
     #check:checked ~ ul{
         left:0;
@@ -97,11 +95,13 @@ li a.active, li a:hover{
 /*--------------MAIN--------------*/
 .container-productos{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 }
 .menu{
     text-align: center;
+    background-color: #ffffff;
+    margin: 50px 100px 50px 60px;
 }
 .menu h3 {
     text-transform: uppercase;
@@ -113,7 +113,7 @@ li a.active, li a:hover{
 }
 .menu li {
     list-style: none;
-    padding: 11px;
+    padding: 10px;
     text-align: left;
 }
 .menu a {
@@ -122,12 +122,12 @@ li a.active, li a:hover{
     background-color: #ffffff;
     border-radius: 5px;
     margin: 5px;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 20px 10px 20px;
     text-decoration: none;
 }
 .menu a:hover{
     color: rgb(255, 255, 255);
-    background-color: #ded6a5;
+    background-color:#ded6a5;
 }
 .galeria-imagenes {
     display: flex;
@@ -139,9 +139,10 @@ li a.active, li a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-self: space-evenly;
-    margin: 60px;
+    margin: 100px;
     width: 250px;
-    height: 350px;
+    height: 360px;
+    padding: 30px 30px 30px 30px;
     background-color: #ded6a5;
     border-radius: 20px;
     box-shadow: 2px 2px 4px rgba(182, 182, 182, 1.5);
@@ -154,6 +155,7 @@ li a.active, li a:hover{
     transform: translateY(-12px);
     opacity: .8;
 }
+
 
 
 #card0 {
@@ -218,11 +220,3 @@ footer a:hover{
     margin: 10px;
 
 } 
-@media (max-width: 952px){
-    .icono{
-        position: fixed;
-    }
-    .enlaces{
-        font-size: 15px;
-    }
-}
