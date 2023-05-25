@@ -55,21 +55,39 @@ li a.active, li a:hover{
     display: none;
 }
 /*-----------NAV-RESPONSIVE-----------------------*/
-@media (max-width: 952px){
-    nav {
-        position: fixed;
+@media (max-width: 360px){
+
+    .checkbtn{
+        display: block;
     }
-    .enlace{
+    ul{
         position: fixed;
-        padding-left: 20px;
+        width: 50%;
+        height: 100%;
+        background:rgb(232, 229, 223);
+        border-radius: 5%;
+        top: 2px;
+        left: -100%;
+        /* text-align: center; */
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
     }
     nav ul li a{
-        font-size: 16px;
+        font-size: 20px;
     }
-
+    li a:hover, li a.active{
+        background: none;
+        color: rgb(255, 255, 255);
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
 }
-
-@media (max-width: 858px){
+@media (min-width:360px) and (max-width: 720px){
     .checkbtn{
         display: block;
     }
@@ -100,10 +118,22 @@ li a.active, li a:hover{
         left:0;
     }
 }
+@media (min-width: 721px){
+    nav {
+        position: fixed;
+    }
+    .enlace{
+        position: fixed;
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+
+}
 
 /*-----------MAIN CONTENT-----------*/
 main{
-
     flex-direction:column;
     display: flex;
     flex-wrap: wrap;
@@ -194,41 +224,47 @@ main{
     color: white;
     border: none;
   }
-  /* -----------NAV-RESPOSIVE---------- */
-  @media (max-width: 952px){ 
-    .ppal{
-        display: inline-flex;
+  /* -----------main-RESPOSIVE---------- */
+ @media (max-width:360px){
+
+    .ppal {
         width: 100%;
         position: relative;
-        margin-top: 120px;
+        margin-top: 10px;
+        /* text-align: center;
+        justify-content: center; */
+        font-size: 22px;
+        }
+
+    .main-text{
+        margin: 15px;
+    }
+        
+}
+@media (min-width:360px) and (max-width: 720px){
+    
+    .ppal {
+        width: 100%;
+        position: relative;
+        margin-top: 10px;
         text-align: center;
         justify-content: center;
         font-size: 30px;
-    }
-}
-  @media (max-width: 858px){
-
-    .ppal {
-        width: 100%;
-        position: relative;
-        margin-top: 120px;
-        text-align: center;
-        justify-content: center;
         }
+    .main-text{
+        margin: 15px;
     }
-@media (max-width: 400px){
-
-    .ppal {
-        width: 100%;
+    
+}
+  @media (min-width: 721px){ 
+    .ppal{
         position: relative;
         margin-top: 130px;
         text-align: center;
         justify-content: center;
-        }
     }
-    /* .grid-item{
-        width: 60%
-} */
+}
+
 /*------FOOTER--------------*/
 footer{
     background-color: #E5E5CB;
@@ -266,7 +302,7 @@ footer a:hover{
     font-size: 18px;
     margin: 10px;
 }
-@media (max-width: 952px){
+@media (max-width:360px){
 
 footer{
     height: 60%;
@@ -283,3 +319,23 @@ footer{
         font-size: 80%;
     }
 }
+@media (min-width:360px) and (max-width: 720px){
+
+    footer{
+        height: 60%;
+        width: 100%;
+    }
+    .rr-ss{
+        padding: 10px;
+    }
+        .rr-ss i{
+            font-size: 80%;
+            padding: 10px
+        }
+        .enlaces{
+            font-size: 80%;
+        }
+    }
+    @media (min-width: 721px){ 
+
+    }
