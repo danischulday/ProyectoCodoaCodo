@@ -237,13 +237,12 @@ li a.active, li a:hover{
         flex-grow: 1;
         flex-basis: 100%;
     }
-    .ppal {
-        position: relative;
+     .ppal {   
         margin-top: 30%;
     }
     .dyc { 
         font-size: 1.8em;
-        position: relative;
+
     }
     .nuestrosclientes{
         font-size: 0.7em;
