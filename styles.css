@@ -126,9 +126,6 @@ main{
     font-weight: bold;
     text-transform: uppercase;
     font-size: 20px;
-    background-color: #83764F;
-    height: 45px;
-    width: 600px;
 }
 
 .main-text{
@@ -140,11 +137,8 @@ main{
 .galeria-imagenes{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    /* justify-content: space-evenly; */
-
-
-    /*espaciar mejor*/
+    /* justify-content: center; */
+    justify-content: space-evenly;
 }
 
 .grid-item{
@@ -152,10 +146,9 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 20px;
-    margin: 10px;
+    margin: 30px;
     width: 350px;
-    height: 420px;
-    /* background-color:#B3C890; */
+    height: 440px;
     background-color: #99A98F;
     box-shadow: 2px 2px 4px rgba(182, 182, 182, 1.5);
     transition: transform 0.5s;
@@ -171,37 +164,53 @@ main{
 
 .grid-item img {
     width: 100%;
-    border-radius: 20px;
-    /* height: 270px;
+    height: 270px;
     object-fit: cover;
-    background-color: #ded6a5;
-    box-shadow: 2px 2px 4px rgba(182, 182, 182, 1.5);
-    transition: transform 0.5s;
-    background-size: cover;
-    margin-top: -20px; */
+
   }
 
-h3{
+.grid-item h3{
     text-align: center;
-    color: #dbd9cb;
-    padding: 2px;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    color: #393E46;
 }
 .btn {
     align-content: center;
     padding: 10px;
     background-color: #393E46;
     height: 50px;
-    font-family:'Alegreya', serif;
+    width: 350px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px solid #99A98F;
+    margin-bottom: 10px;
+  }
+.btn:hover {
+    box-shadow: 0px 10px 15px 5px rgba(182, 182, 182, 1.5);
+    transform: translateY(-12px);
+    opacity: .2;
+}
+  .grid-item a{
+    font-family: 'Wix Madefor Display', sans-serif;
     font-size: 15px;
     color: white;
     border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    /* margin-bottom: 80px; */
-    box-shadow: 2px 2px 4px rgba(182, 182, 182, 1.5);
-    margin-bottom: 10px;
   }
+  @media (max-width: 858px){
 
+    .ppal,.main-title1,.main-text{
+        position: fixed;
+        min-width: 50%;
+        height: 50%;
+        /* background:rgb(232, 229, 223);
+        border-radius: 5%;
+        top: 2px;
+        left: -100%; */
+        text-align: center;
+        transition: all .5s;
+    }
+}
 /*------FOOTER--------------*/
 footer{
     background-color: #E5E5CB;
