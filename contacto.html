@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon_io/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Gina Cocteles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Oswald:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Oswald:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b734776b03.js" crossorigin="anonymous"></script>
+    <title>Cocteles Gina</title>
 </head>
 <body>
     <nav>
@@ -18,13 +26,55 @@
             <img src="images/logo.png" alt="logo gina" class="logo">
         </a>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/servicios.html">Servicios</a></li>
+            <li><a href="/productos.html">Productos</a></li>
+            <li><a href="/contacto.html">encontranos</a></li>
         </ul>
     </nav>
-    
+    <main>
+        <section>
+            <div class="container">
+                <h1>Formulario</h1>
+                <form id="myForm" onsubmit="return validateForm()">
+                  <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control w-50" id="name" placeholder="Ingrese su nombre" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control w-50" id="email" placeholder="Ingrese su email" aria-required="">
+                  </div>
+                  <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea class="form-control w-50" id="mensaje" rows="3" placeholder="Ingrese su mensaje"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+              </div>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script>
+      function validateForm() {
+        var nameInput = document.getElementById("name");
+        var emailInput = document.getElementById("email");
+        if (nameInput.value === "") {
+          alert("Por favor, ingresa tu nombre");
+          nameInput.focus();
+          return false;
+        }
+        if (emailInput.value === "") {
+          alert("Por favor, ingresa tu email");
+          emailInput.focus();
+          return false;
+        }
+      
+      }
+      
+        </script>
+    </main>
     <footer>
         <div class="rr-ss" >
            <a href="icono"><i class="fa-brands fa-instagram"></i></a>
@@ -39,5 +89,6 @@
         </div>
         <p>Proyecto Codo a Codo © 2023. </p>
     </footer>
+  
 </body>
 </html>

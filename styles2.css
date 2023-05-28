@@ -1,0 +1,299 @@
+body{
+    font-family: 'Wix Madefor Display', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*-------NAV------------*/
+nav{
+    background:  rgb(232, 229, 223);
+    height: 170px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 120px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #000000;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+li a.active, li a:hover{
+    background:#dbd9cb;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: rgb(74, 72, 69);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    nav {
+        position: fixed;
+    }
+    .enlace{
+        position: fixed;
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 50%;
+        height: 100%;
+        background:rgb(232, 229, 223);
+        border-radius: 5%;
+        top: 2px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: rgb(255, 255, 255);
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+/*----- MAIN -------*/
+
+.ppal {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Fasthand', cursive;
+    font-family: 'Oswald', sans-serif;
+    margin: 3%;
+}
+.dyc{
+    font-size: 2.8em;
+}
+.intro {
+    display: flex;
+    flex-flow: wrap;
+    font-size: 1.3em;
+
+}
+.nosotros{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    flex-flow: wrap;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 3%;
+    background:rgb(232, 229, 223);
+}
+
+#fotopomelo {
+    width: 100%;
+    margin-bottom:2%;
+}
+.frase {
+    margin: 1%;
+}
+
+.nuestrosclientes {
+    text-align: center;
+    margin: 5%;
+    font-size: 1.3em;
+}
+.eventosimagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+    
+.imagen {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+        width: 350px;
+        height: 350px;
+        background-color:rgb(232, 229, 223);;
+        border-radius: 20px;
+        box-shadow: 2px 2px 4px rgba(182, 182, 182, 1.5);
+        transition: transform 0.5s;
+        background-size: cover;
+        text-align: center
+    
+    
+}
+#img {
+    width: 350px;
+    border-radius:20px ;
+    
+}
+.fecha {
+    width: 100%;
+    text-align: center;
+    font-size: 15px
+}
+
+.imagen:hover {
+    box-shadow: 0px 10px 15px 5px rgba(182, 182, 182, 1.5);
+    transform: translateY(-12px);
+    opacity: .8;
+}
+
+@media (max-width: 952px){ 
+.ppal{
+    display: inline-block;
+    width: 100%;
+    margin-top: 22%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    
+}
+.dyc {
+    font-size: 2.5em;
+}
+ 
+.intro { 
+    display: inline-flex;
+    font-size:1.2em;
+}    
+.nuestrosclientes{
+    font-size: 1em;
+}
+}
+
+@media (max-width: 858px){
+.ppal {
+    margin-top: 24%;
+    }
+.intro {
+    display: inline-flex;
+    font-size: 1em;
+}
+.dyc{
+    font-size: 2.4em;
+}
+.nuestrosclientes{
+    font-size: 0.8em;
+}
+}
+@media (max-width: 752px){
+    .ppal {
+        margin-top: 27%;
+    }
+.intro {
+    display: inline-flex;
+    font-size: 1em; 
+}
+.dyc {
+    font-size: 2em;
+}
+.nuestrosclientes{
+    font-size: 0.8em;
+}
+}
+
+@media(max-width: 660px) {
+    .ppal, .intro, .nosotros {
+        flex-grow: 1;
+        flex-basis: 100%;
+    }
+     .ppal {   
+        margin-top: 30%;
+    }
+    .dyc { 
+        font-size: 1.8em;
+
+    }
+    .nuestrosclientes{
+        font-size: 0.7em;
+    }
+    .intro{
+        font-size: 0.8em;
+    }}
+
+
+
+
+/* ----------------FOOTER-------------- */
+footer{
+    background-color:  #E5E5CB;
+    text-align:center;
+    padding: 20px;
+}
+
+.rr-ss{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 20px;
+}
+.rr-ss a {
+    color: #000;
+}
+.rr-ss i{
+    font-size: 30px;
+    padding: 0 30px 30px 30px;
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+
+}
+footer a:hover{
+    color:#ded6a5;
+}
+.enlaces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    word-spacing: 5px;
+    font-size: 18px;
+    margin: 10px;
+
+} 
+@media (max-width: 952px){
+    .icono{
+        position: fixed;
+    }
+    .enlaces{
+        font-size: 15px;
+    }
+}
