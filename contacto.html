@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -6,6 +6,7 @@
   <title>Formulario de Contacto</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
+  <script src="./script.js"></script>
   <style>
     body {
   font-family: Arial, sans-serif;
@@ -78,9 +79,9 @@ footer {
     <section>
         <div class="container">
             <h1>Formulario</h1>
-            <form id="myForm" onsubmit="return validateForm()">
+            <form id="myForm" onsubmit="validateForm()">
               <div class="form-group">
-                <label for="nombre">Nombre:</label>
+                <label for="name">Nombre:</label>
                 <input type="text" class="form-control w-50" id="name" placeholder="Ingrese su nombre" required>
               </div>
               <div class="form-group">
@@ -105,23 +106,6 @@ footer {
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script>
-function validateForm() {
-  var nameInput = document.getElementById("name");
-  var emailInput = document.getElementById("email");
-  if (nameInput.value === "") {
-    alert("Por favor, ingresa tu nombre");
-    nameInput.focus();
-    return false;
-  }
-  if (emailInput.value === "") {
-    alert("Por favor, ingresa tu email");
-    emailInput.focus();
-    return false;
-  }
-
-}
-
-  </script>
+  <script src="./script.js"></script>
 </body>
 </html>
