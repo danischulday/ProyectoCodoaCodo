@@ -224,11 +224,33 @@ li a.active, li a:hover{
 .container-formulario{
     font-family: 'Wix Madefor Display', sans-serif;
     font-size: 20px;
-    padding: 20px;
     background-color: rgb(255, 255, 255);
     width: 100%;
-    box-sizing: border-box;
-
+    text-align: center;
+}
+input {
+   border-radius: 5px;
+   border: 1px solid;
+   height: 30px;
+   width: 300px;
+   margin: 10px;
+}
+textarea{
+    height: 80px;
+    width: 300px;
+    margin: 10px 10px -30px 10px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+button{
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 20px;
+    background-color: rgb(232, 229, 223);
+    height: 40px;
+    width: 80px;
+    border: 1px solid rgb(204, 202, 198);
+    border-radius: 5px;
+    margin: 60px 100px 0px;
 }
 .container-mapa{
     font-family: 'Wix Madefor Display', sans-serif;
@@ -270,7 +292,7 @@ footer a{
 
 }
 footer a:hover{
-    color:#ded6a5;
+    color:#839a7c;
 }
 .enlaces {
     display: flex;
