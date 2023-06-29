@@ -171,6 +171,7 @@ li a.active, li a:hover{
     width: 100%;
     text-align: center;
     font-size: 15px
+    margin: 2px
 }
 
 .imagen:hover {
