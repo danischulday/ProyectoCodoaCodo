@@ -259,12 +259,13 @@ button{
     padding: 20px;
 }
 .mapas{
-    margin: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-self: space-around;
-    justify-content:center;
-   
+    justify-content:center;  
+}
+.mapas iframe{
+    margin: 20px;  
 }
 
 /*------FOOTER--------------*/
