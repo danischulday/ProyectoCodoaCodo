@@ -164,6 +164,9 @@ li a.active, li a:hover{
     border-radius:20px ;
     
 }
+.h3 {
+    border: 2px;
+}
 .fecha {
     width: 100%;
     text-align: center;
