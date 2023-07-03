@@ -1,10 +1,8 @@
 
-function validateForm() {
-        
+function validateFormRest() {     
     const apiKey = '8ae0f7bbbb06c4476ef74caa542e373a';
     const email = document.getElementById("email").value; 
     const url = `http://apilayer.net/api/check?access_key=${apiKey}&email=${encodeURIComponent(email)}`;
-    console.log(url)
     fetch(url)
       .then(response => response.json())
       .then(data => {
@@ -23,7 +21,25 @@ function validateForm() {
         console.log('Error:', error);
         alert("algo salio mal");
         return false;
-    
       });
-    
     }
+
+  function validateForm() {
+    const nombre = document.getElementById("name").value;
+    const mail = document.getElementById("email").value;
+    //const mensaje = document.getElementById("mensaje").value;
+
+    if (nombre === "") {
+      alert("se debe ingresar un nombre");
+      return;
+    }
+
+    if (mail === "") {
+      alert("se debe ingresar una direccion de correo");
+      return;
+    }
+
+
+    
+    validateFormRest();
+  }
